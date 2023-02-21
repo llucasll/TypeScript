@@ -7,3 +7,4 @@ function* f(): IterableIterator<number> {
 >yield 1 : undefined
 >1 : 1
 }
+

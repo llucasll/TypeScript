@@ -1,4 +1,4 @@
-tests/cases/compiler/index.ts(2,3): error TS2411: Property '[Symbol.iterator]' of type '() => IterableIterator<any>' is not assignable to 'symbol' index type 'string'.
+tests/cases/compiler/index.ts(2,3): error TS2411: Property '[Symbol.iterator]' of type '() => IterableIterator<any, any, undefined>' is not assignable to 'symbol' index type 'string'.
 tests/cases/compiler/index.ts(2,3): error TS2411: Property '[Symbol.unscopables]' of type '() => { copyWithin: boolean; entries: boolean; fill: boolean; find: boolean; findIndex: boolean; keys: boolean; values: boolean; }' is not assignable to 'symbol' index type 'string'.
 
 
@@ -40,7 +40,7 @@ tests/cases/compiler/index.ts(2,3): error TS2411: Property '[Symbol.unscopables]
     class Test extends Array1 {
       [key: symbol]: string
       ~~~~~~~~~~~~~~~~~~~~~
-!!! error TS2411: Property '[Symbol.iterator]' of type '() => IterableIterator<any>' is not assignable to 'symbol' index type 'string'.
+!!! error TS2411: Property '[Symbol.iterator]' of type '() => IterableIterator<any, any, undefined>' is not assignable to 'symbol' index type 'string'.
 !!! related TS2728 tests/cases/compiler/other.ts:14:3: '[Symbol.iterator]' is declared here.
       ~~~~~~~~~~~~~~~~~~~~~
 !!! error TS2411: Property '[Symbol.unscopables]' of type '() => { copyWithin: boolean; entries: boolean; fill: boolean; find: boolean; findIndex: boolean; keys: boolean; values: boolean; }' is not assignable to 'symbol' index type 'string'.

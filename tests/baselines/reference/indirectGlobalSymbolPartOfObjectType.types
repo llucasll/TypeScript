@@ -7,7 +7,7 @@ const Symbol = globalThis.Symbol;
 >Symbol : SymbolConstructor
 
 [][Symbol.iterator];
->[][Symbol.iterator] : () => IterableIterator<undefined>
+>[][Symbol.iterator] : () => IterableIterator<undefined, any, undefined>
 >[] : undefined[]
 >Symbol.iterator : unique symbol
 >Symbol : SymbolConstructor
